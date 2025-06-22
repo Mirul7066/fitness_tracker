@@ -10,11 +10,9 @@ if (!isset($_SESSION['user_id'])) {
 
 $username = $_SESSION['username'];
 
-// Include shared header (with navbar)
 include 'includes/header.php';
 ?>
 
-<!-- Dashboard Content -->
 <div class="container mt-5">
     <h2 class="text-center mb-4">Dashboard</h2>
     <div class="text-center">

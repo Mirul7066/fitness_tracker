@@ -8,19 +8,23 @@ if (session_status() === PHP_SESSION_NONE) {
 <head>
     <meta charset="UTF-8">
     <title>Fitness Tracker</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet"> 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="dashboard.php">Fitness Tracker</a>
+        <a class="navbar-brand fw-bold" href="dashboard.php">Fitness Tracker</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
-            <!-- Centered Nav Links -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="view_entries.php">Dashboard</a>
@@ -30,8 +34,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 </li>
             </ul>
 
-            <!-- Right Side User Info -->
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <span class="nav-link text-white">Hello, <?= htmlspecialchars($_SESSION['username']) ?></span>
                 </li>
@@ -44,4 +47,5 @@ if (session_status() === PHP_SESSION_NONE) {
 </nav>
 
 <div class="container mt-4">
+
 

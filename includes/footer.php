@@ -1,4 +1,4 @@
-</div> <!-- end container -->
+</div>
 <footer class="text-center text-muted py-4 mt-5 border-top">
     <p>&copy; <?= date('Y') ?> Fitness Tracker. All rights reserved.</p>
 </footer>

@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary, .btn-success, .btn-danger, .btn-outline-light {
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: #f0f2f5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .navbar .navbar-text, .navbar .btn {
+        font-size: 0.9rem;
+    }
+}

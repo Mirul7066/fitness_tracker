@@ -4,7 +4,7 @@ require_once 'includes/db.php';
 include 'includes/header.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $user_id = $_SESSION['user_id']; // Get user ID from session
+    $user_id = $_SESSION['user_id']; 
     $activity_date = $_POST['activity_date'];
     $activity_type = $_POST['activity_type'];
     $duration = $_POST['duration_minutes'];

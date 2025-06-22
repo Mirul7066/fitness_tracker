@@ -14,7 +14,6 @@ try {
 }
 ?>
 
-<!-- Add New Entry Button -->
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h2 class="mb-0">Your Fitness Entries</h2>
     <a href="add_entry.php" class="btn btn-success">➕ Add New Entry</a>
